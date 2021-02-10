@@ -1,0 +1,1 @@
+﻿Get-ADGroupMember -identity 'Executive' | Get-ADObject -Properties Name, DisplayName | Select Name, DisplayName | Export-CSV C:\test\Executive_Membership_Report.csv -NoTypeInformation -Encoding UTF8
