@@ -1,1 +1,0 @@
-﻿Get-MsolUser -All | Where-Object {$_.StrongAuthenticationMethods -ne $null -and $_.BlockCredential -eq $False} | Select-Object -Property UserPrincipalName | Export-CSV C:\users\test\Desktop\MFA_Report.csv -NoTypeInformation -Encoding UTF8
